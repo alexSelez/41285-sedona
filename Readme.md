@@ -3,6 +3,7 @@
 * Студент: [Александр Селезнёв](https://up.htmlacademy.ru/htmlcss/19/user/41285).
 * Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv). 
 
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
