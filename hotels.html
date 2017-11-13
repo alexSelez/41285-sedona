@@ -8,17 +8,58 @@
   	<header class="main-header">
   		<nav class="navigation">
   			<ul class="main-menu">
-  				<li class="main-menu-item"><a href="#">информация</a></li>
-  				<li class="main-menu-item"><a href="#">фото и видео</a></li>
-  				<li class="main-menu-item"><a href="#">карта штата</a></li>
-  				<li class="main-menu-item"><a href="#">гостиницы</a></li>
+  				<li class="main-menu-item"><a href="#">Информация</a></li>
+  				<li class="main-menu-item"><a href="#">Фото и видео</a></li>
+  				<li class="main-menu-item"><a href="#">Карта штата</a></li>
+  				<li class="main-menu-item"><a href="#">Гостиницы</a></li>
   			</ul>
         <a href="#"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
   		</nav>  	
   	</header>
   	<main class="hotels-main">
       <section class="hotels-search">
-        <!-- Тут будет форма-->
+        <form action="#" class="form-hotel-search">
+          <fieldset name="infrastructure">
+            <legend class="hotels-search-title">Инфраструктура:</legend>
+            <input class="hotels-search-field" type="checkbox" id="pool" name="pool" checked>
+            <label class="hotels-search-label" for="pool">Бассейн</label>
+            <p>
+              <input class="hotels-search-field" type="checkbox" id="parking" name="parking">
+              <label class="hotels-search-label" for="parking">Парковка</label>
+            </p>
+            <p>
+              <input class="hotels-search-field" type="checkbox" id="wi-fi" name="wi-fi">
+              <label class="hotels-search-label" for="wi-fi">Wi-Fi</label>
+            </p>            
+          </fieldset>
+
+            <fieldset name="home-type">
+            <legend class="hotels-search-title">Тип жилья:</legend>
+            <input class="hotels-search-field" type="checkbox" id="hotel" name="hotel" checked>
+            <label class="hotels-search-label" for="hotel">Гостиница</label>
+            <p>
+              <input class="hotels-search-field" type="checkbox" id="motel" name="motel" checked>
+              <label class="hotels-search-label" for="motel">Отель</label>
+            </p>
+            <p>
+              <input class="hotels-search-field" type="checkbox" id="apartments" name="apartments">
+              <label class="hotels-search-label" for="apartments">Аппартаменты</label>
+            </p>            
+          </fieldset>
+
+        <fieldset name="price">
+          <legend class="hotels-search-title">Стоимость в сутки (Р):</legend>
+          <label for="price-min" class="hotels-search-label">от</label>
+          <input class="price" type="text" name="min" id="price-min" value="0" min="0" max="3699">
+          <label for="price-max" class="hotels-search-label">до</label>
+          <input class="price" type="text" name="max" id="price-max" value="3000" min="1" max="3700">
+          <p>
+            <input type="range" name="min-max" min="0" max="3700" multiple>
+          </p>
+          <button type="submit" class="price-btn">Показать</button>
+        </fieldset>
+
+        </form>
 
       </section> 
       <section class="search-result">
@@ -117,17 +158,35 @@
 				<div class="instagram">
 					<a href="#" class="instagram">#visitsedona</a>
 				</div>
-				<div class="social">
-					<ul class="social-link">
-						<li class="social-link-item"><a href="#"><img src="http://placehold.it/46x48" width="46" height="48" alt="twitter"></a>twitter</li>
-						<li class="social-link-item"><a href="#"><img src="http://placehold.it/46x48" width="46" height="48" alt="facebook"></a>facebook</li>
-						<li class="social-link-item"><a href="#"><img src="http://placehold.it/46x48" width="46" height="48" alt="youtube"></a>youtube</li>
-					</ul>
-				</div>
-				<div class="website">
-					<p class="website-text">website by</p>
-					<img src="img/academy-logo.png" width="115" height="41" alt="htmlacadeny">
-				</div>
+		    <div class="social">
+          <ul class="social-link">
+            <li class="social-link-item">
+              <a href="#">
+                <img src="http://placehold.it/46x48" width="46" height="48" alt="">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="#">
+                <img src="http://placehold.it/46x48" width="46" height="48">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="#">
+                <img src="http://placehold.it/46x48" width="46" height="48">              
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+		  <div class="website">
+          <p class="website-text">website by</p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/academy-logo.png" width="115" height="41" alt="htmlacademy">
+              <span class="visually-hidden">Htmlacademy</span>
+            </a>      
+        </div>
 		</footer>
   </body>
 </html>
