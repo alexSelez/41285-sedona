@@ -5,9 +5,10 @@ body{
   	text-transform: uppercase;
   	font-size: 14px;
   	font-weight: 400;
-  	line-height: 26px;
+  	line-height: 21px;
   	color: #333;
   	box-sizing: border-box;
+  	width: 1200px;
  }
  a{
  	text-decoration: none;
@@ -22,6 +23,11 @@ fieldset{
 	border: none;
 }
 
+h3{
+	padding: 0;
+	margin: 0;
+}
+
 .visually-hidden{
 	  position: absolute;
 	  width: 1px;
@@ -33,6 +39,36 @@ fieldset{
 	  overflow: hidden;
 }
 /*index*/
+/*header*/
+.navigation{
+	position: relative;	
+}
+
+.main-menu{
+	display: flex;
+	align-items: center;
+	height: 56px;
+	width: 100%;	
+	padding: 0 6% 0 6%;
+	box-sizing: border-box;
+}
+
+.main-menu-item{
+	width: 20%;
+}
+
+.main-menu-item:nth-child(2) {
+  margin-right: 20%;
+}
+.main-menu-item:nth-child(1),
+.main-menu-item:nth-child(2) {
+  text-align: left;
+
+}
+.main-menu-item:nth-child(3), 
+.main-menu-item:nth-child(4) {
+  text-align: right;
+}
 
 .main-menu-item-link{
 	color: #000;
@@ -47,25 +83,74 @@ fieldset{
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.logo{
+	  position: absolute;
+	  left: 50%;
+	  top: 0;
+	  transform: translateX(-50%);
+}
+
 .promo{
 	height: 506px;
 	width: 100%;
 	background: #fff url(../img/index-back.jpg) no-repeat;
+}
+.promo-text{
+	text-align: center;
+	padding-top: 76px;
+}
+.features-intro-header{
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 55px;
 }
 
 .features-intro-title{
 	color: #000;
 	font-size: 21px;
 	font-weight: 700;
+	padding-bottom: 38px;
 }
 
+.feature-big{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 256px;
+}
 .feature{	
 	background-color: #81b3d2;
 	color: #fff;
+	width: 400px;
+	text-align: center;
+	padding-top: 46px;
+	height: 256px;
+	box-sizing: border-box;
 }
 .feature-title{
 	font-size: 21px;
 	font-weight: 700;
+}
+
+.feature-small-in{
+	display: flex;
+	height: 330px;
+	width: 100%;
+}
+
+.feature-small-in-item{	
+	text-align: center;
+	width: 33%;	
+	padding-top: 150px;
+}
+.home{
+	background: url(../img/icon-1.svg) 50% 60px no-repeat;
+}
+.eat{
+	background: url(../img/icon-3.svg) 50% 60px no-repeat;
+}
+.souvenir{
+	background: url(../img/icon-2.svg) 50% 60px no-repeat;
 }
 
 .feature-small-in-title{
@@ -73,14 +158,34 @@ fieldset{
 	font-size: 21px;
 	font-weight: 700;
 }
+
 .feature-small-in-text{
 	color: #333;
+}
+
+.feature-third-fourth-fifth{
+	display: flex;
 }
 
 .feature-third-fourth-fifth .feature{
 	background-color: #f2f2f2;
 	color: #000;
+	width: 400px;
+	padding: 50px 70px 65px 70px;
+	text-align: center;
 }
+
+.search{
+	position: relative;
+}
+
+.search-header{
+	height: 290px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 57px;
+}
+
 .search-header-title{
 	color: #000;
 	font-size: 30px;
@@ -95,7 +200,13 @@ fieldset{
 .form-search{
 	width: 568px;
 	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+	position: absolute;
+	top: 205px;
+	left: 50%;
+	margin-left: -284px;
+	background-color: #fff;
 }
+
 .form-search-btn-title{
 	background-color: #766357;
 	text-align: center;
@@ -109,9 +220,11 @@ fieldset{
 	text-transform: uppercase;
 	border: 0;
 }
+
 .form-search-btn-title:hover{
 	background-color: #604e43;
 }
+
 .form-search-btn-title:active{
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);	
@@ -133,12 +246,14 @@ fieldset{
 	line-height: 26px;
 	text-transform: uppercase;
 }
+
 .input-date{
 	width: 346px;
 	height: 38px;
 	background-color: #f2f2f2;
 	border: 0;
 }
+
 .input-count{	
 	width: 38px;
 	height: 38px;
@@ -178,12 +293,39 @@ fieldset{
 
 /*footer*/
 
-.instagram{
+.main-footer{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+}
+
+.footer-item{
+	width: 400px;
+	height: 100%
+	margin: 0 auto;
+	text-align: center;
+}
+
+.instagram-link{
 	color: #000;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 21px;	
 	font-weight: 700;
-	line-height: 26px;
+}
+
+.main-footer-social{
+	
+
+}
+.main-footer-website{
+
+}
+
+.social-links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .social-link{
@@ -191,6 +333,9 @@ fieldset{
 	width: 46px;
 	height: 48px;	
 	background-color: #81b3d2; 	
+}
+.social-link-item{
+	margin-right: 6px;
 }
 .twitter{
 	background: #81b3d2 url(../img/twitter.svg) 50% 50% no-repeat;
@@ -209,16 +354,25 @@ fieldset{
 	background-color: #669ec0;
 }
 
+.main-footer-website{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .htmlacademy-logo{
 	display: block;
 	width: 115px;
 	height: 41px;
+	margin-left: 8px;
 }
 
-.website svg:hover #academy{
+.main-footer-website svg:hover #academy{
 	fill: #81b3d2;
 }
-.website svg:active #academy{
+.main-footer-website svg:active #academy{
 	fill: #bdbbbc;
 }
 
@@ -228,9 +382,21 @@ fieldset{
 	color: #766357;
 }
 
+
 /*Form-hotel*/
+
+.hotels-search{
+
+}
 .form-hotel-search{
 	background: url(../img/bg-hotels.jpg) no-repeat;
+	display: flex;
+}
+
+.price{
+	margin-left: auto;
+	padding-right: 6%;
+	outline: 2px solid blue;
 }
 
 .hotels-search-title{
@@ -277,19 +443,31 @@ fieldset{
 .result-title{
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 26px;
+	padding-right: 49px;
 }
 
+.sorting{
+	display: flex;
+	height: 88px;
+	align-items: center;
+}
+
+.sorting-menu{
+	display: flex;
+}
 .sorting-title{
 	font-size: 12px;
 	font-weight: 400;
-	line-height: 18px;
+	padding-right: 40px;
+}
+
+.sorting-menu-item{
+	padding-right: 33px;
 }
 .sorting-link{
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 12px;
 	font-weight: 400;
-	line-height: 18px;
 	border-bottom: 1px dashed #81b3d2;
 }
 .sorting-link:hover{
@@ -303,10 +481,25 @@ fieldset{
 	color: #000;
 }
 
+.sorting-controls{
+	margin-left: auto;
+	padding-right: 6%;
+}
+
+.hotel-info{
+	display: flex;
+	height: 150px;
+	outline: 2px solid blue;
+	align-items: center;
+}
+.text-info{
+	outline: 2px solid blue;
+	padding-top: 0;
+}
+
 .hotel-title{
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 26px;
 }
 .hotel-title:hover{
 	color: #81b3d2;
@@ -316,8 +509,22 @@ fieldset{
 }
 .hotel-text{
 	color: #333;
+	padding: 0;
 }
 
+.details-book{
+	display: flex;
+	padding-top: 0;
+	outline: 2px solid blue;
+}
+.hotel-details {
+outline: 2px solid blue;
+padding: 0;
+}
+
+.hotel-rating{
+	margin-left: auto;
+}
 
 .rating-text{
 	display: block;
@@ -329,12 +536,11 @@ fieldset{
 }
 
 .btn{
-	padding: 8px 17px;
+	padding: 8px 17px 7px 17px;
 	color: #fff;	
 	font-size: 14px;
 	font-weight: 700;
-	line-height: 21px;
-	
+	box-sizing: border-box;
 }
 .btn-details{
 	background-color: #81b3d2;
