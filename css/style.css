@@ -492,6 +492,11 @@ h3{
 	outline: 2px solid blue;
 	align-items: center;
 }
+
+.hotel-inf{
+	outline: 2px solid blue;
+	display: flex;
+}
 .text-info{
 	outline: 2px solid blue;
 	padding-top: 0;
@@ -512,14 +517,13 @@ h3{
 	padding: 0;
 }
 
-.details-book{
-	display: flex;
-	padding-top: 0;
-	outline: 2px solid blue;
-}
-.hotel-details {
+.type-price {
 outline: 2px solid blue;
-padding: 0;
+display: flex;
+}
+
+.hotel-booking{
+	outline: 2px solid blue;
 }
 
 .hotel-rating{
