@@ -8,8 +8,8 @@ body{
   	line-height: 21px;
   	color: #333;
   	box-sizing: border-box;
-  	width: 1200px;
  }
+
  a{
  	text-decoration: none;
  }
@@ -26,6 +26,10 @@ fieldset{
 h3{
 	padding: 0;
 	margin: 0;
+}
+.container{
+	margin: auto;
+	width: 1200px;
 }
 
 .visually-hidden{
@@ -314,14 +318,6 @@ h3{
 	font-weight: 700;
 }
 
-.main-footer-social{
-	
-
-}
-.main-footer-website{
-
-}
-
 .social-links{
 	display: flex;
 	justify-content: center;
@@ -497,14 +493,18 @@ h3{
 	outline: 2px solid blue;
 	display: flex;
 }
+.hotel-inf img{
+	margin-right: 30px;
+}
+
 .text-info{
-	outline: 2px solid blue;
-	padding-top: 0;
+	outline: 2px solid blue;	
 }
 
 .hotel-title{
 	font-size: 21px;
 	font-weight: 700;
+	line-height: 14px;
 }
 .hotel-title:hover{
 	color: #81b3d2;
@@ -512,18 +512,29 @@ h3{
 .hotel-title:active{
 	color: rgba(0, 0, 0, 0.3);
 }
-.hotel-text{
-	color: #333;
-	padding: 0;
-}
+
 
 .type-price {
-outline: 2px solid blue;
-display: flex;
+	display: flex;	
+	margin: 14px 0 14px 0;
+}
+.type-price :first-child{
+	width: 110px;
+	margin-right: 6px;
+}
+.type-price :last-child{
+	width: 142px;
+}
+.hotel-text{
+	color: #333;
+	font-size: 14px;
 }
 
 .hotel-booking{
-	outline: 2px solid blue;
+	display: flex;
+}
+.hotel-booking a{
+	display: block;
 }
 
 .hotel-rating{
@@ -540,14 +551,18 @@ display: flex;
 }
 
 .btn{
-	padding: 8px 17px 7px 17px;
 	color: #fff;	
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 700;	
+	line-height: 26px;
+	height: 27px;
+	text-align: center;
+	margin-right: 6px;
 	box-sizing: border-box;
 }
 .btn-details{
 	background-color: #81b3d2;
+	width: 110px;
 }
 .btn-details:hover{
 	background-color: #669ec0;;
@@ -558,6 +573,7 @@ display: flex;
 }
 .btn-booking{
 	background-color: #766357;
+	width: 142px;
 }
 .btn-booking:hover{
 	background-color: #604e43;

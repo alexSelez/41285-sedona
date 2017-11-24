@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div class="container">
   	<header class="main-header">
   		<nav class="navigation">
   			<ul class="main-menu">
@@ -20,8 +21,7 @@
   		</nav>  	
   	</header>
   	<main class="hotels-main">
-      <section class="hotels-search">
-       
+      <section class="hotels-search">       
         <form action="#" class="form-hotel-search">
           <div class="infrastructure">
             <fieldset name="infrastructure">
@@ -40,35 +40,34 @@
           </div>
           <div class="home-type">
             <fieldset name="home-type">
-            <legend class="hotels-search-title">Тип жилья:</legend>
-            <input class="hotels-search-field" type="checkbox" id="hotel" name="hotel" checked>
-            <label class="hotels-search-label" for="hotel">Гостиница</label>
-            <p>
-              <input class="hotels-search-field" type="checkbox" id="motel" name="motel" checked>
-              <label class="hotels-search-label" for="motel">Отель</label>
-            </p>
-            <p>
-              <input class="hotels-search-field" type="checkbox" id="apartments" name="apartments">
-              <label class="hotels-search-label" for="apartments">Аппартаменты</label>
-            </p>            
-          </fieldset>
+              <legend class="hotels-search-title">Тип жилья:</legend>
+              <input class="hotels-search-field" type="checkbox" id="hotel" name="hotel" checked>
+              <label class="hotels-search-label" for="hotel">Гостиница</label>
+              <p>
+                <input class="hotels-search-field" type="checkbox" id="motel" name="motel" checked>
+                <label class="hotels-search-label" for="motel">Отель</label>
+              </p>
+              <p>
+                <input class="hotels-search-field" type="checkbox" id="apartments" name="apartments">
+                <label class="hotels-search-label" for="apartments">Аппартаменты</label>
+              </p>            
+            </fieldset>
+          </div>
+          <div class="price">
+            <fieldset name="price">
+              <legend class="hotels-search-title">Стоимость в сутки (Р):</legend>
+              <label for="price-min" class="hotels-search-label">от</label>
+              <input class="price-text" type="text" name="min" id="price-min" value="0" min="0" max="3699">
+              <label for="price-max" class="hotels-search-label">до</label>
+              <input class="price-text" type="text" name="max" id="price-max" value="3000" min="1" max="3700">
+              <p>
+                <input type="range" name="min-max" min="0" max="3700" multiple>
+              </p>
+              <button type="submit" class="show-btn">Показать</button>
+            </fieldset>
         </div>
-        <div class="price">
-        <fieldset name="price">
-          <legend class="hotels-search-title">Стоимость в сутки (Р):</legend>
-          <label for="price-min" class="hotels-search-label">от</label>
-          <input class="price-text" type="text" name="min" id="price-min" value="0" min="0" max="3699">
-          <label for="price-max" class="hotels-search-label">до</label>
-          <input class="price-text" type="text" name="max" id="price-max" value="3000" min="1" max="3700">
-          <p>
-            <input type="range" name="min-max" min="0" max="3700" multiple>
-          </p>
-          <button type="submit" class="show-btn">Показать</button>
-        </fieldset>
-      </div>
-
         </form>
-      </div>
+      
       </section> 
       <section class="search-result">
         <div class="sorting">
@@ -96,8 +95,8 @@
               <div class="text-info">
                 <h3 class="hotel-title">Amara Resort & Spa</h3>              
                   <div class="type-price">
-                    <p class="hotel-text">Гостиница</p>
-                    <p class="hotel-text">от 4000 р.</p>                    
+                    <span class="hotel-text">Гостиница</span>
+                    <span class="hotel-text">от 4000 р.</span>               
                   </div>
                   <div class="hotel-booking">
                     <a href="#" class="btn btn-details">Подробнее</a>
@@ -126,8 +125,8 @@
               <div class="text-info">
                 <h3 class="hotel-title">Desert Quail Inn</h3>              
                   <div class="type-price">
-                    <p class="hotel-text">Мотель</p>
-                    <p class="hotel-text">от 3000 р.</p>                    
+                    <span class="hotel-text">Мотель</span>
+                    <span class="hotel-text">от 3000 р.</span>               
                   </div>
                   <div class="hotel-booking">
                     <a href="#" class="btn btn-details">Подробнее</a>
@@ -154,8 +153,8 @@
               <div class="text-info">
                 <h3 class="hotel-title">Villas at Poco Diablo</h3>           
                   <div class="type-price">
-                    <p class="hotel-text">Апартаменты</p>
-                    <p class="hotel-text">от 2000 р.</p>                    
+                    <span class="hotel-text">Апартаменты</span>
+                    <span class="hotel-text">от 2000 р.</span>               
                   </div>
                   <div class="hotel-booking">
                     <a href="#" class="btn btn-details">Подробнее</a>
@@ -209,5 +208,6 @@
           </div>    
         </div>
     </footer>
+   </div> 
   </body>
 </html>
