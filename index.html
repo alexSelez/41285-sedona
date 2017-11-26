@@ -92,48 +92,38 @@
 					<div class="map">
 						<img src="img/map.jpg" width="1200" height="593" alt="map">
 					</div>			
-			<form action="" class="form-search"> 
-    <button class="form-search-btn-title">Поиск гостиницы в Седоне</button> 
-        <div class="form-search-content">
-          <p>
-            <label for="date-in">Дата заезда:</label>
-            <input type="text" class="input-date" id="date-in" name="date-in" value="24 апреля 2017">
-           <button class="calendar">Календарь</button>
-          </p>
-          <p>
-            <label for="date-out">Дата выезда:</label>
-            <input type="text" class="input-date" id="date-out" name="date-out" value="4 июля 2017">
-             <button class="calendar">Календарь</button>           
-          </p>
-          <label for="adult" class="adult-label">Взрослые:</label>
-          <button class="minus-adult input-count">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9.917px" height="1.917px" viewBox="0 0 9.917 1.917" enable-background="new 0 0 9.917 1.917" xml:space="preserve" fill="currentColor">
-            <rect width="9.917" height="1.917" />
-          </svg>
-          </button>
-          <input type="text" class="input-count" id="adult" name="adult" value="2">
-          <button class="plus-adult input-count">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9.917px" height="9.917px" viewBox="0 0 9.917 9.917" enable-background="new 0 0 9.917 9.917" xml:space="preserve" fill="currentColor">
-           <polygon points="9.917,4 5.917,4 5.917,0 4,0 4,4 0,4 0,5.917 4,5.917 4,9.917 5.917,9.917 5.917,5.917 9.917,5.917 "/>
-           </svg>          
-          </button>
-          <label for="kids" class="kids-label">Дети:</label>
-          <button class="minus-kids input-count">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9.917px" height="1.917px" viewBox="0 0 9.917 1.917" enable-background="new 0 0 9.917 1.917" xml:space="preserve" fill="currentColor">
-            <rect width="9.917" height="1.917" />
-          </svg>
-          </button>
-          <input type="text" class="input-count" id="kids" name="kids" value="0">
-          <button class="plus-kids input-count">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9.917px" height="9.917px" viewBox="0 0 9.917 9.917" enable-background="new 0 0 9.917 9.917" xml:space="preserve" fill="currentColor">
-           <polygon points="9.917,4 5.917,4 5.917,0 4,0 4,4 0,4 0,5.917 4,5.917 4,9.917 5.917,9.917 5.917,5.917 9.917,5.917 "/>
-           </svg>          
-          </button>
-          <p>
-            <button type="submit" class="form-search-btn">Найти</button>
-          </p>
-        </div>        
-      </form>
+          <form action="" class="form-search"> 
+            <button class="form-search-btn-title">Поиск гостиницы в Седоне</button> 
+                <div class="form-search-content">
+                  <div class="dates">
+                    <label for="date-in" class="form-search-label">Дата заезда:</label>
+                    <input type="text" class="input-date" id="date-in" name="date-in" value="24 апреля 2017">
+                  </div>
+                  <button class="calendar">Календарь</button>          
+                  <div class="dates">
+                    <label for="date-out" class="form-search-label">Дата выезда:</label>
+                    <input type="text" class="input-date" id="date-out" name="date-out" value="4 июля 2017">
+                  </div>
+                  <button class="calendar">Календарь</button>             
+                  <div class="men">
+                    <div class="adults">
+                      <label for="adult" class="adult-label">Взрослые:</label>      
+                      <button class="minus input-count"></button>
+                      <input type="text" class="input-count" id="adult" name="adult" value="2">
+                      <button class="input-count plus"></button>
+                    </div>
+                    <div class="children">
+                      <label for="kids" class="kids-label">Дети:</label>
+                      <button class="minus input-count">
+                      </button>
+                      <input type="text" class="input-count" id="kids" name="kids" value="0">
+                      <button class="input-count plus">         
+                      </button>
+                    </div>  
+                  </div>      
+                  <button type="submit" class="form-search-btn">Найти</button>     
+                </div>        
+          </form>
 				</section>
 			</section>
 		</main>

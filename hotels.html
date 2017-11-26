@@ -53,19 +53,22 @@
               </p>            
             </fieldset>
           </div>
-          <div class="price">
-            <fieldset name="price">
-              <legend class="hotels-search-title">Стоимость в сутки (Р):</legend>
-              <label for="price-min" class="hotels-search-label">от</label>
-              <input class="price-text" type="text" name="min" id="price-min" value="0" min="0" max="3699">
-              <label for="price-max" class="hotels-search-label">до</label>
-              <input class="price-text" type="text" name="max" id="price-max" value="3000" min="1" max="3700">
-              <p>
-                <input type="range" name="min-max" min="0" max="3700" multiple>
-              </p>
+          <div class="price-range">         
+              <div class="price-range-title">Стоимость в сутки (Р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0" min="0" max="3699"></label>             
+                <label class="max-price">до <input type="text" name="max-price" value="3000" min="1" max="3700"></label>        
+              </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>             
               <button type="submit" class="show-btn">Показать</button>
-            </fieldset>
-        </div>
+            
+          </div>
         </form>
       
       </section> 
@@ -83,12 +86,13 @@
             </div>
           
           <div class="sorting-controls">     
-            <a href="#" class="arrow asc">c</a>     
-            <a href="#" class="arrow des arrow-active">c</a>   
+            <a href="#" class="arrow asc"></a>     
+            <a href="#" class="arrow des arrow-active"></a>   
           </div>
+
         </div>
         <div class="search-result-hotels">
-          <div class="search-result-hotels-item">
+    
             <div class="hotel-info">
               <div class="hotel-inf">
               <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara resort">
@@ -111,14 +115,12 @@
                 <span class="rating-star">s</span>
                 <span class="rating-star">s</span>
                 <span class="rating-star">s</span>
-              </div>
-              <div class="hotel-rating-number">
-                <p class="rating-text">Рейтинг: 8,5</p>
-              </div>
+              </div>             
+                <p class="rating-text">Рейтинг: 8,5</p>             
             </div>
             </div>         
-          </div>
-          <div class="search-result-hotels-item">
+      
+          
             <div class="hotel-info">
               <div class="hotel-inf">
               <img src="img/desert-hotel.jpg" width="135" height="90" alt="Amara resort">
@@ -139,14 +141,12 @@
                   <span class="rating-star">s</span>
                   <span class="rating-star">s</span>
                   <span class="rating-star">s</span>
-                </div>
-                <div class="hotel-rating-number">
-                  <p class="rating-text">Рейтинг: 8,9</p>
-                </div>
+                </div>                
+                  <p class="rating-text">Рейтинг: 8,9</p>                
               </div>
             </div>        
-          </div>
-          <div class="search-result-hotels-item">
+         
+         
             <div class="hotel-info">
               <div class="hotel-inf">
               <img src="img/villas-hotel.jpg" width="135" height="90" alt="Amara resort">
@@ -166,16 +166,15 @@
                 <div class="hotel-rating-stars">
                   <span class="rating-star">s</span>
                   <span class="rating-star">s</span>
-                </div>
-                <div class="hotel-rating-number">
+                </div>                
                  <p class="rating-text">Рейтинг: 9,2</p>
-                </div>
               </div>
             </div>
-          </div>        
+            </div>
+           
       </section>			
 		</main>
-		    <footer class="main-footer">     
+		    <footer class="hotels-footer">     
         <div class="footer-item">
           <a href="#" class="instagram-link">#visitsedona</a>
         </div> 
