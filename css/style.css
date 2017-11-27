@@ -225,6 +225,7 @@ h3{
 	font-family: 'PT Sans', Arial, sans-serif;
 	text-transform: uppercase;
 	border: 0;
+	cursor: pointer;
 }
 
 .form-search-btn-title:hover{
@@ -273,13 +274,16 @@ h3{
 	border: none;
 	text-align: center;
 	box-sizing: border-box;
+
 }
 .plus{
 	background: #f2f2f2 url(../img/plus.svg) no-repeat 50% 50%;
+	cursor: pointer;
 }
 
 .minus{
 	background: #f2f2f2 url(../img/minus.svg) no-repeat 50% 50%;
+	cursor: pointer;
 }
 
 .plus:hover{
@@ -311,6 +315,7 @@ h3{
 	height: 58px;
 	border: none;
 	margin-top: 54px;
+	cursor: pointer;
 }
 .form-search-btn:hover{
 	background-color: #669ec0;
@@ -328,6 +333,7 @@ h3{
 	position: relative;
 	top: -33px;
 	left: 425px;
+	cursor: pointer;
 }
 .calendar:hover{		
 	background: url(../img/calendar-hover.svg) 50% 50% no-repeat;
