@@ -22,156 +22,140 @@
   	</header>
   	<main class="hotels-main">
       <section class="hotels-search">       
-        <form action="#" class="form-hotel-search">
-          <div class="infrastructure">
-            <fieldset name="infrastructure">
-              <legend class="hotels-search-title">Инфраструктура:</legend>
-              <input class="hotels-search-field" type="checkbox" id="pool" name="pool" checked>
-              <label class="hotels-search-label" for="pool">Бассейн</label>
+        <form action="#" class="form-hotel-search">          
+            <fieldset name="infrastructure" class="infrastructure">
+              <legend class="hotels-search-title">Инфраструктура:</legend>          
+              <input type="checkbox" name="pool" id="pool">
+              <label for="pool" class="hotels-search-checkbox">Бассейн</label>
               <p>
-               <input class="hotels-search-field" type="checkbox" id="parking" name="parking">
-                <label class="hotels-search-label" for="parking">Парковка</label>
+                <input class="" type="checkbox" name="parking" id="parking">
+                <label for="parking" class="hotels-search-checkbox">Парковка</label>
               </p>
-              <p>
-               <input class="hotels-search-field" type="checkbox" id="wi-fi" name="wi-fi">
-                <label class="hotels-search-label" for="wi-fi">Wi-Fi</label>
+              <p>                  
+                <input class="" type="checkbox" name="wi-fi" id="wi-fi">       
+                <label for="wi-fi" class="hotels-search-checkbox">Wi-Fi </label> 
               </p>            
-            </fieldset>
-          </div>
-          <div class="home-type">
-            <fieldset name="home-type">
+            </fieldset>       
+            <fieldset name="home-type" class="home-type">
               <legend class="hotels-search-title">Тип жилья:</legend>
-              <input class="hotels-search-field" type="checkbox" id="hotel" name="hotel" checked>
+              <input type="checkbox" id="hotel" name="hotel">
               <label class="hotels-search-label" for="hotel">Гостиница</label>
               <p>
-                <input class="hotels-search-field" type="checkbox" id="motel" name="motel" checked>
+                <input type="checkbox" id="motel" name="motel">
                 <label class="hotels-search-label" for="motel">Отель</label>
               </p>
               <p>
-                <input class="hotels-search-field" type="checkbox" id="apartments" name="apartments">
+                <input type="checkbox" id="apartments" name="apartments">
                 <label class="hotels-search-label" for="apartments">Аппартаменты</label>
               </p>            
-            </fieldset>
-          </div>
-          <div class="price-range">         
+            </fieldset>         
+            <div class="price-range">         
               <div class="price-range-title">Стоимость в сутки (Р):</div>
               <div class="price-controls">
                 <label class="min-price">от <input type="text" name="min-price" value="0" min="0" max="3699"></label>             
                 <label class="max-price">до <input type="text" name="max-price" value="3000" min="1" max="3700"></label>        
               </div>
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                        <div class="range-toggle range-toggle-min"></div>
-                        <div class="range-toggle range-toggle-max"></div>
-                    </div>             
-              <button type="submit" class="show-btn">Показать</button>
-            
-          </div>
-        </form>
-      
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>             
+              <button type="submit" class="show-btn">Показать</button>            
+            </div>
+        </form>      
       </section> 
       <section class="search-result">
-        <div class="sorting">
-          
-            <p class="result-title">Найдено: 3</p>
-            <p class="sorting-title">Сортировка:</p>
-            <div class="sorting-nav">
+        <div class="sorting">          
+          <p class="result-title">Найдено: 3</p>
+          <p class="sorting-title">Сортировка:</p>
+          <div class="sorting-nav">
             <ul class="sorting-menu">
               <li class="sorting-menu-item"><a href="#" class="sorting-link">По цене</a></li>
               <li class="sorting-menu-item"><a href="#" class="sorting-link">По типу</a></li>
               <li class="sorting-menu-item"><a href="#" class="sorting-link">По рейтингу</a></li>
             </ul>
-            </div>
-          
+          </div>          
           <div class="sorting-controls">     
             <a href="#" class="arrow asc"></a>     
             <a href="#" class="arrow des arrow-active"></a>   
           </div>
-
         </div>
-        <div class="search-result-hotels">
-    
-            <div class="hotel-info">
-              <div class="hotel-inf">
+        <div class="search-result-hotels">    
+          <div class="hotel-info">
+            <div class="hotel-inf">
               <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara resort">
               <div class="text-info">
                 <h3 class="hotel-title">Amara Resort & Spa</h3>              
-                  <div class="type-price">
-                    <span class="hotel-text">Гостиница</span>
-                    <span class="hotel-text">от 4000 р.</span>               
-                  </div>
-                  <div class="hotel-booking">
-                    <a href="#" class="btn btn-details">Подробнее</a>
-                    <a href="#" class="btn btn-booking">Забронировать</a>
-                  </div>                
+                <div class="type-price">
+                  <span class="hotel-text">Гостиница</span>
+                  <span class="hotel-text">от 4000 р.</span>               
+                </div>
+                <div class="hotel-booking">
+                  <a href="#" class="btn btn-details">Подробнее</a>
+                  <a href="#" class="btn btn-booking">Забронировать</a>
+                </div>                
               </div>
-              </div>
-             <div class="hotel-rating">
+            </div>
+            <div class="hotel-rating">
               <div class="hotel-rating-stars">
                 <span class="rating-star">s</span>
                 <span class="rating-star">s</span>
                 <span class="rating-star">s</span>
                 <span class="rating-star">s</span>
-                <span class="rating-star">s</span>
               </div>             
-                <p class="rating-text">Рейтинг: 8,5</p>             
+              <p class="rating-text">Рейтинг: 8,5</p>             
             </div>
-            </div>         
-      
-          
-            <div class="hotel-info">
-              <div class="hotel-inf">
+          </div>               
+          <div class="hotel-info">
+            <div class="hotel-inf">
               <img src="img/desert-hotel.jpg" width="135" height="90" alt="Amara resort">
               <div class="text-info">
                 <h3 class="hotel-title">Desert Quail Inn</h3>              
-                  <div class="type-price">
-                    <span class="hotel-text">Мотель</span>
-                    <span class="hotel-text">от 3000 р.</span>               
-                  </div>
-                  <div class="hotel-booking">
-                    <a href="#" class="btn btn-details">Подробнее</a>
-                    <a href="#" class="btn btn-booking">Забронировать</a>
-                  </div>                
-              </div>
-              </div>
-              <div class="hotel-rating">
-                <div class="hotel-rating-stars">
-                  <span class="rating-star">s</span>
-                  <span class="rating-star">s</span>
-                  <span class="rating-star">s</span>
+                <div class="type-price">
+                  <span class="hotel-text">Мотель</span>
+                  <span class="hotel-text">от 3000 р.</span>               
+                </div>
+                <div class="hotel-booking">
+                  <a href="#" class="btn btn-details">Подробнее</a>
+                  <a href="#" class="btn btn-booking">Забронировать</a>
                 </div>                
-                  <p class="rating-text">Рейтинг: 8,9</p>                
               </div>
-            </div>        
-         
-         
-            <div class="hotel-info">
-              <div class="hotel-inf">
+            </div>
+            <div class="hotel-rating">
+              <div class="hotel-rating-stars">
+                <span class="rating-star">s</span>
+                <span class="rating-star">s</span>
+                <span class="rating-star">s</span>
+              </div>                
+              <p class="rating-text">Рейтинг: 8,9</p>                
+            </div>
+          </div>         
+          <div class="hotel-info">
+            <div class="hotel-inf">
               <img src="img/villas-hotel.jpg" width="135" height="90" alt="Amara resort">
               <div class="text-info">
                 <h3 class="hotel-title">Villas at Poco Diablo</h3>           
-                  <div class="type-price">
-                    <span class="hotel-text">Апартаменты</span>
-                    <span class="hotel-text">от 2000 р.</span>               
-                  </div>
-                  <div class="hotel-booking">
-                    <a href="#" class="btn btn-details">Подробнее</a>
-                    <a href="#" class="btn btn-booking">Забронировать</a>
-                  </div>                
+                <div class="type-price">
+                  <span class="hotel-text">Апартаменты</span>
+                  <span class="hotel-text">от 2000 р.</span>               
+                </div>
+                <div class="hotel-booking">
+                  <a href="#" class="btn btn-details">Подробнее</a>
+                  <a href="#" class="btn btn-booking">Забронировать</a>
+                </div>                
               </div>
-              </div>
+            </div>
               <div class="hotel-rating">
                 <div class="hotel-rating-stars">
                   <span class="rating-star">s</span>
                   <span class="rating-star">s</span>
                 </div>                
-                 <p class="rating-text">Рейтинг: 9,2</p>
+                <p class="rating-text">Рейтинг: 9,2</p>
               </div>
-            </div>
-            </div>
-           
+          </div>
+        </div>           
       </section>			
 		</main>
 		    <footer class="hotels-footer">     
