@@ -209,6 +209,7 @@ h3{
 }
 .google-map{
 	position: absolute;
+	border: 0;
 }
 /*form-search*/
 .form-search{
