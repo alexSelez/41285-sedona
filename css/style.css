@@ -284,11 +284,20 @@ h3{
 	        box-sizing: border-box;
 	margin-left: auto;
 }
+.input-date:hover{
+	background-color: #ebebeb;
+}
+.input-date:focus{
+	border: 2px solid #e5e5e5;
+	background-color: #fff;
+	outline: none;
+}
 .input-count{	
 	width: 38px;
 	height: 38px;
 	background-color: #f2f2f2;
 	border: none;
+	outline: none;
 	text-align: center;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -332,7 +341,7 @@ h3{
 }
 .form-search-btn:active{
 	background-color: #5496bd;
-	color: rgba(255, 255, 255, 0.3);	
+	color: rgba(255, 255, 255, 0.3);
 }
 .calendar{		
 	text-indent: -9999px;
@@ -344,6 +353,7 @@ h3{
 	top: -33px;
 	left: 425px;
 	cursor: pointer;
+	outline: none;
 }
 .calendar:hover{		
 	background: url(../img/calendar-hover.svg) 50% 50% no-repeat;

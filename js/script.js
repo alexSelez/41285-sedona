@@ -4,10 +4,20 @@
     var din = popup.querySelector("[name=date-in]");
     var dout = popup.querySelector("[name=date-out]");
     var storage = localStorage.getItem("In");
-    popup.classList.add("form-hide");
+   
       btn.addEventListener("click", function(evt){
-        evt.preventDefault();
-        popup.classList.toggle("form-show");   
+
+         if (popup.classList.contains("form-hide")) {
+          evt.preventDefault();
+          popup.classList.remove("form-hide");
+          popup.classList.remove("info-error");
+          popup.classList.add("form-show");
+        }
+        else{
+          evt.preventDefault();
+          popup.classList.remove("form-show");
+          popup.classList.add("form-hide");
+        }  
     });
     form.addEventListener("submit", function (evt) {
       if ((!din.value) || (!dout.value)){
